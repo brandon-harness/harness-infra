@@ -4,7 +4,7 @@ module "ccm" {
 
   # source = "../../terraform-aws-harness-ccm"
 
-  s3_bucket_arn = "arn:aws:s3:::brandon-harness-ccm"
+  s3_bucket_arn = "arn:aws:s3:::harness-solutions-architecture"
 
   #overwrite
   external_id   = "harness:891928451355:2HHvmuKbSyeBFbEMIEZhLg"
