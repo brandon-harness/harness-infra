@@ -45,27 +45,18 @@ resource "harness_platform_connector_awscc" "brandonharnessccm" {
   }
 }
 
-# resource "harness_platform_connector_azure_cloud_cost" "azure-sales-ccm" {
-#   identifier = "azuresalesccm"
-#   name       = "azure-sales-ccm"
+resource "harness_platform_connector_azure_cloud_cost" "azure-sales-ccm" {
+  identifier = "azuresalesccm"
+  name       = "azure-sales-ccm"
 
-#   features_enabled = ["BILLING", "VISIBILITY", "OPTIMIZATION"]
-#   tenant_id        = "b229b2bb-5f33-4d22-bce0-730f6474e906"
-#   subscription_id  = "e8389fc5-0cb8-44ab-947b-c6cf62552be0"
-#   billing_export_spec {
-#     storage_account_name = "rileysnyderharnessio"
-#     container_name       = "ccm"
-#     directory_name       = "export"
-#     report_name          = "rileysnyderharnessccm"
-#     subscription_id      = "e8389fc5-0cb8-44ab-947b-c6cf62552be0"
-#   }
-# }
-
-# resource "harness_platform_connector_azure_cloud_cost" "azure-sales-ccm-broken" {
-#   identifier = "azuresalesccmbroken"
-#   name       = "azure-sales-ccm-broken"
-
-#   features_enabled = ["VISIBILITY", "OPTIMIZATION"]
-#   tenant_id        = "b229b2bb-5f33-4d22-bce0-730f6474e906"
-#   subscription_id  = "e8389fc5-0cb8-44ab-947b-c6cf62552be1"
-# }
+  features_enabled = ["BILLING", "VISIBILITY", "OPTIMIZATION"]
+  tenant_id        = "b229b2bb-5f33-4d22-bce0-730f6474e906"
+  subscription_id  = "e8389fc5-0cb8-44ab-947b-c6cf62552be0"
+  billing_export_spec {
+    storage_account_name = "rileysnyderharnessio"
+    container_name       = "ccm"
+    directory_name       = "export"
+    report_name          = "rileysnyderharnessccm"
+    subscription_id      = "e8389fc5-0cb8-44ab-947b-c6cf62552be0"
+  }
+}
